@@ -1,17 +1,28 @@
 # Nexus Scenic Themes
 
-Four locally packaged scenic themes for PI-Desktop: Twilight Mountains, Alpine Light, Obsidian Horizon, and Emerald Afterglow.
+An appearance theme pack for [PI-Desktop](https://github.com/vastsa/PI-Desktop). It adds four scenic themes from PI-Desktop Nexus to the native theme system.
 
-Open **Settings → Extensions → Nexus Scenic Themes** to choose a theme and set its backdrop-only blur from 0 to 20 pixels. Each theme remembers its own blur value.
+Requires PI-Desktop 0.15.8 or later.
+
+![Nexus Scenic Themes settings](screenshots/settings.png)
+
+## Themes
+
+- Twilight Mountains: blue-violet twilight mountain glass
+- Alpine Light: pale icy-blue translucent glass
+- Obsidian Horizon: moonlit charcoal and navy glass
+- Emerald Afterglow: sunlit deep-emerald forest glass
+
+| Twilight Mountains | Alpine Light |
+| --- | --- |
+| ![Twilight Mountains](screenshots/twilight-mountains.png) | ![Alpine Light](screenshots/alpine-light.png) |
+| Obsidian Horizon | Emerald Afterglow |
+| ![Obsidian Horizon](screenshots/obsidian-horizon.png) | ![Emerald Afterglow](screenshots/emerald-afterglow.png) |
+
+## Settings
+
+Open **Settings > Extensions > Nexus Scenic Themes** to select a theme and set its backdrop blur from 0px to 20px. Each theme retains its own blur value.
 
 ## Permissions
 
-- `ui.theme` applies the four declared themes and their validated backdrop-blur variable.
-- `ui.settings` contributes the sandboxed Settings destination.
-- `ui.window.appearance` supplies safe native fallback colors while a declared theme is selected.
-
-No files, network, clipboard, shell, agent tools, or remote assets are used. Backdrops are bundled locally. Visual direction and assets are attributed to the Nexus project: https://github.com/Akshayxkill/PI-Desktop-Nexus.
-
-## Compatibility
-
-This preview requires PI-Desktop builds containing the plugin appearance extensions API from `feat/plugin-appearance-extensions`. It will receive a released version floor once that API merges upstream.
+The plugin uses only `ui.theme`, `ui.settings`, and `ui.window.appearance`. All images are bundled locally; it does not use filesystem, network, shell, clipboard, agent tools, or background services.
